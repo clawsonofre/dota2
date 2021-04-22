@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+      <b-navbar class="position-sticky" type="dark" variant="dark">
+        <b-navbar-nav> </b-navbar-nav>
+      </b-navbar>
     </div>
-    <router-view/>
+
+    <router-view />
   </div>
 </template>
 
@@ -16,17 +18,22 @@
   text-align: center;
   color: #2c3e50;
 }
-
 #nav {
-  padding: 30px;
+  background-color: rgb(175, 175, 255);
 }
-
 #nav a {
   font-weight: bold;
   color: #2c3e50;
 }
-
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+#login {
+  text-align: center;
+  padding: 20%;
+  padding-top: 0%;
+}
+#user {
+  padding: 1%;
 }
 </style>
