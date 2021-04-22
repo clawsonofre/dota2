@@ -23,6 +23,7 @@ export default {
   props: {
     datos: "",
   },
+ 
   methods: {
     mostrar() {
       this.check = !this.check;

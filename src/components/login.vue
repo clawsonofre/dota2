@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       texto: "",
-      titulo: "Bienvenidos a Vue Dota2",
+      titulo: "Dota2",
       heroes: [],
     };
   },
