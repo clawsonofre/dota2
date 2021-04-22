@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       texto: "",
-      titulo: "Dota2",
+      titulo: " Dota2 ",
       heroes: [],
     };
   },
