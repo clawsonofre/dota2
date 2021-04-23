@@ -1,11 +1,11 @@
 <template>
   <div id="prueba" class="container">
-    <h4>{{ titulo }}</h4>
+    <h4 style="color: white">{{ titulo }}</h4>
     <img src="../assets/dota2.jpeg" />
-<span><h3>Ingrese el nombre o letra que tenga su heroe</h3></span>
+<span><h3 style="color: white;">Ingrese el nombre o letra que tenga su heroe</h3></span>
     <div class="mt-4">
       <div>
-        <b-form-input v-model="texto" type="text" debounce="500"></b-form-input>
+        <b-form-input class="mb-3" v-model="texto" type="text" debounce="500" style="width : 70%; heigth : 50% ; margin:0px auto;"></b-form-input>
 
         <div >
           <Heroes
@@ -56,7 +56,8 @@ export default {
 </script>
 <style>
 img {
-  max-width: 100%;
-  max-height: 1%;
+  max-width: 80%;
+  min-width: 50%;
+  border-radius: 50%;
 }
 </style>
