@@ -4,7 +4,7 @@
 <span><h3 style="color: white;">Ingrese el nombre o letra que tenga su heroe</h3></span>
     <div class="mt-4">
       <div>
-        <b-form-input class="mb-3" v-model="texto" type="text" debounce="500" style="width : 70%; heigth : 50% ; margin:0px auto;"></b-form-input>
+        <b-form-input class="mb-3" v-model="texto" type="text" debounce="500" style="width : 70%; heigth : 50% ; margin:0px auto; text-align: center;"></b-form-input>
 
         <div >
           <Heroes
