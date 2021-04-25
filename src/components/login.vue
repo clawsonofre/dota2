@@ -1,7 +1,6 @@
 <template>
   <div id="prueba" class="container">
-    <h4 style="color: white">{{ titulo }}</h4>
-    <img src="../assets/dota2.jpeg" />
+    <img class="mt-3" src="../assets/dota2.jpeg" />
 <span><h3 style="color: white;">Ingrese el nombre o letra que tenga su heroe</h3></span>
     <div class="mt-4">
       <div>
@@ -28,7 +27,6 @@ export default {
   data() {
     return {
       texto: "",
-      titulo: " Dota2 ",
       heroes: [],
     };
   },
