@@ -1,10 +1,14 @@
 <template>
   <div class="container">
     <div>
-      <v-btn class="mb-3" @click="mostrar()" pill variant="outline-danger"
+      <b-button
+        variant="dark"
+        style="border-radius: 5rem"
+        class="mb-3"
+        @click="mostrar()"
         >{{ datos.displayName + " "
         }}<b-icon icon="book" variant="primary"></b-icon>
-      </v-btn>
+      </b-button>
       <v-card
         class="p-3"
         style="text-align: justify"
