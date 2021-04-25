@@ -11,14 +11,14 @@
       </b-button>
       <v-card
         class="p-3"
-        style="text-align: justify"
+        style="text-align: justify; border-radius: 30px"
         elevation="10"
         loading
         v-if="check"
         ><h3 style="text-align: center">
           Biografía de {{ datos.displayName }}
         </h3>
-        <span>{{ datos.language.bio }}</span>
+        <span >{{ datos.language.bio }}</span>
       </v-card>
     </div>
   </div>
