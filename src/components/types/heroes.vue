@@ -18,7 +18,7 @@
         ><h3 style="text-align: center">
           Biografía de {{ datos.displayName }}
         </h3>
-        <span >{{ datos.language.bio }}</span>
+        <span>{{ datos.language.bio }}</span>
       </v-card>
     </div>
   </div>
