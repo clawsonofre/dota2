@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/login.vue'
-import Heroes from '../components/types/heroes.vue'
+import Heros from '../components/types/heros.vue'
 
 Vue.use(VueRouter)
 
@@ -10,8 +10,8 @@ const routes = [{
         component: Login,
     },
     {
-        path: '/Heroes',
-        component: Heroes,
+        path: '/Heros',
+        component: Heros,
         props: true
     }
 ]

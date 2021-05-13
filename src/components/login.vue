@@ -17,27 +17,27 @@
         ></b-form-input>
 
         <div>
-          <Heroes
+          <Heros
             :datos="datos"
             v-for="(datos, index) in buscar"
             :key="index"
-          ></Heroes>
+          ></Heros>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import Heroes from "../components/types/heroes.vue";
+import Heros from "./types/heros.vue";
 export default {
   name: "Login",
   components: {
-    Heroes,
+    Heros,
   },
   data() {
     return {
       texto: "",
-      heroes: [],
+      heros: [],
     };
   },
 
@@ -48,14 +48,14 @@ export default {
     dota2Axios() {
       this.axios.get("https://api.stratz.com/api/v1/Hero/").then((response) => {
         for (const index in response.data) {
-          this.heroes.push(response.data[index]);
+          this.heros.push(response.data[index]);
         }
       });
     },
   },
   computed: {
     buscar() {
-      return this.heroes.filter((datos) => {
+      return this.heros.filter((datos) => {
         return datos.displayName.toLowerCase().match(this.texto.toLowerCase());
       });
     },
