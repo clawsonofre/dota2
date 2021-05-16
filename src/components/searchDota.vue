@@ -3,14 +3,14 @@
     <img class="mt-3" src="../assets/dota2.jpeg" />
     <span
       ><h3 style="color: white">
-        Ingrese el nombre o letra que tenga su heroe
+        <b><u>Search your Hero</u></b>
       </h3></span
     >
     <div class="mt-4">
       <div>
         <b-form-input
           class="mb-3"
-          v-model="texto"
+          v-model="text"
           type="text"
           debounce="500"
           style="width: 70%; heigth: 50%; margin: 0px auto; text-align: center"
@@ -18,8 +18,8 @@
 
         <div>
           <Heros
-            :datos="datos"
-            v-for="(datos, index) in buscar"
+            :dota="dota"
+            v-for="(dota, index) in filterSearch"
             :key="index"
           ></Heros>
         </div>
@@ -36,16 +36,16 @@ export default {
   },
   data() {
     return {
-      texto: "",
+      text: "",
       heros: [],
     };
   },
 
   mounted() {
-    this.dota2Axios();
+    this.searchDotaAxios();
   },
   methods: {
-    dota2Axios() {
+    searchDotaAxios() {
       this.axios.get("https://api.stratz.com/api/v1/Hero/").then((response) => {
         for (const index in response.data) {
           this.heros.push(response.data[index]);
@@ -54,9 +54,9 @@ export default {
     },
   },
   computed: {
-    buscar() {
-      return this.heros.filter((datos) => {
-        return datos.displayName.toLowerCase().match(this.texto.toLowerCase());
+    filterSearch() {
+      return this.heros.filter((dota) => {
+        return dota.displayName.toLowerCase().match(this.text.toLowerCase());
       });
     },
   },

@@ -5,8 +5,8 @@
         variant="dark"
         style="border-radius: 5rem"
         class="mb-3"
-        @click="mostrar()"
-        >{{ datos.displayName + " "
+        @click="searchDota()"
+        >{{ dota.displayName + " "
         }}<b-icon icon="book" variant="primary"></b-icon>
       </b-button>
       <v-card
@@ -15,10 +15,8 @@
         elevation="10"
         loading
         v-if="check"
-        ><h3 style="text-align: center">
-          Biografía de {{ datos.displayName }}
-        </h3>
-        <span>{{ datos.language.bio }}</span>
+        ><h3 style="text-align: center">{{ dota.displayName }} Biography</h3>
+        <span>{{ dota.language.bio }}</span>
       </v-card>
     </div>
   </div>
@@ -30,17 +28,15 @@ export default {
       check: false,
     };
   },
-  name: "Heroes",
+  name: "Heros",
   props: {
-    datos: "",
+    dota: "",
   },
 
   methods: {
-    mostrar() {
+    searchDota() {
       this.check = !this.check;
     },
   },
 };
-
-//https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/
 </script>
