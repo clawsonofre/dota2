@@ -17,23 +17,23 @@
         ></b-form-input>
 
         <div class="row">
-          <Heros class="col-4"
+          <Heroes class="col-4"
             :dota="dota"
             
             v-for="(dota, index) in filterSearch"
             :key="index"
-          ></Heros>
+          ></Heroes>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import Heros from "./types/heros.vue";
+import Heros from "./heroes.vue";
 export default {
   name: "Login",
   components: {
-    Heros,
+    Heroes,
   },
   data() {
     return {
