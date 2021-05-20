@@ -29,7 +29,7 @@
   </div>
 </template>
 <script>
-import Heros from "./heroes.vue";
+import Heroes from "./heroes.vue";
 export default {
   name: "Login",
   components: {

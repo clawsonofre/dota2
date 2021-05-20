@@ -1,17 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import SearchDota from '../components/searchDota.vue'
-import Heros from '../components/types/heros.vue'
+import SearchHero from '../components/searchHero.vue'
+import Heroes from '../components/heroes.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
-        component: SearchDota,
+        component: SearchHero,
     },
     {
-        path: '/Heros',
-        component: Heros,
+        path: '/Heroes',
+        component: Heroes,
         props: true
     }
 ]
