@@ -43,10 +43,10 @@ export default {
   },
 
   mounted() {
-    this.searchDotaAxios();
+    this.getHeroes();
   },
   methods: {
-    searchDotaAxios() {
+    getHeroes() {
       this.axios.get("https://api.stratz.com/api/v1/Hero/").then((response) => {
         for (const index in response.data) {
           this.heros.push(response.data[index]);
