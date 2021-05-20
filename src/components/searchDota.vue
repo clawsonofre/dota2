@@ -3,7 +3,7 @@
     <img class="mt-3" src="../assets/dota2.jpeg" />
     <span
       ><h3 style="color: white">
-        <b><u>Search your Hero</u></b>
+        <b><u>Search your Hero.</u></b>
       </h3></span
     >
     <div class="mt-4">
@@ -16,9 +16,10 @@
           style="width: 70%; heigth: 50%; margin: 0px auto; text-align: center"
         ></b-form-input>
 
-        <div>
-          <Heros
+        <div class="row">
+          <Heros class="col-4"
             :dota="dota"
+            
             v-for="(dota, index) in filterSearch"
             :key="index"
           ></Heros>
