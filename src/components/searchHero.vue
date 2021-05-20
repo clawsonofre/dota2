@@ -3,7 +3,7 @@
     <img class="mt-3" src="../assets/dota2.jpeg" />
     <span
       ><h3 style="color: white">
-        <b><u>Search your Hero.</u></b>
+        <b><u>Search your Hero</u></b>
       </h3></span
     >
     <div class="mt-4">
