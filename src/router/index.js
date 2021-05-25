@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import SearchHero from '../components/searchHero.vue'
-import Heroes from '../components/heroes.vue'
+import SearchHero from '../views/SearchHero'
+import Heroes from '../views/Heroes'
 
 Vue.use(VueRouter)
 
